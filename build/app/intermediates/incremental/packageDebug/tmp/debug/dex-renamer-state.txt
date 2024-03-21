@@ -1,4 +1,4 @@
-#Fri Mar 15 16:05:26 EET 2024
+#Thu Mar 21 13:09:58 EET 2024
 base.0=C\:\\Users\\eslam\\Desktop\\Flutter-project-chat-app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
