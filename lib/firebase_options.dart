@@ -54,7 +54,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDqByeA_QRYS0AvkXEMNepSvjaYyL-qSHs',
+    apiKey: '${{ secrets.API_KEY }}',
     appId: '1:507671487778:android:4db668d2d7231f8b34717b',
     messagingSenderId: '507671487778',
     projectId: 'chatapp-beeda',
