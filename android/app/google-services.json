@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "507671487778",
+    "project_id": "chatapp-beeda",
+    "storage_bucket": "chatapp-beeda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507671487778:android:4db668d2d7231f8b34717b",
+        "android_client_info": {
+          "package_name": "com.example.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqByeA_QRYS0AvkXEMNepSvjaYyL-qSHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

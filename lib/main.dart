@@ -1,50 +1,32 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:chatapp/views/login.dart';
+import 'package:chatapp/views/register.dart';
 import 'package:flutter/material.dart';
+import 'firebase_options.dart';
 
-void main() {
-  runApp(const MyApp());
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const ChatApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class ChatApp extends StatelessWidget {
+  const ChatApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // ignore: prefer_const_constructors
-    return MaterialApp(
-      home:  Scaffold(
-        body: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.blue,
-              child: const Center(
-                child: Text("Container 1"),
-              ),
-            ),
-             Container(
-              width: 50,
-              height: 70,
-              color: Colors.blueGrey,
-              child: const Center(
-                child: Text("Container 2"),
-              ),
-            ),
-             Container(
-              width: 50,
-              height: 70,
-              color: Colors.amberAccent,
-              child: const Center(
-                child: Text("Container 3"),
-              ),
-            ),
-          ],
-        ),
-      ),
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: {
+        Register.id : (context) => const Register(),
+        Login.id :(context) => const Login(),
+      },
+      initialRoute: Login.id,
     );
   }
 }
+
